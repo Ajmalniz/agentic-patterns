@@ -1,0 +1,19 @@
+[project]
+name = "agentic-patterns"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Ajmal Khan", email = "128520849+Ajmalniz@users.noreply.github.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "crewai>=0.102.0",
+]
+
+[project.scripts]
+agentic-patterns = "agentic_patterns:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
