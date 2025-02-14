@@ -13,8 +13,8 @@ This project uses:
 
 Each pattern will be implemented in separate files to maintain clarity and modularity. The patterns we'll implement include:
 
-1. Chain-of-Thought Prompting
-   ![Chain of Thought Flowchart](docs/images/chain_of_thought_flow.png)
+### 1. Chain-of-Thought Prompting
+   
    This flowchart illustrates the Chain of Thought implementation for customer support:
    - Extracts issue from customer email
    - Generates draft response
@@ -23,7 +23,22 @@ Each pattern will be implemented in separate files to maintain clarity and modul
    - Polishes final response
    - Writes to file
 
-2. Self-Reflection
+![Chain of Thought Flowchart](docs/images/chain_of_thought_flow.png)
+
+## 2. Routing Agents (Customer Support AI with Specialized Agents)
+
+### Workflow Breakdown
+
+. **User Query Input:** The system receives a customer's message.
+. **Routing Agent:** A classification model determines the nature of the query.
+. **Specialized Agents:** Based on the classification, the query is routed to one of the following specialized agents:
+   - **Billing Agent**: Handles payment issues, invoices, refunds.
+   - **Technical Support Agent**: Resolves product issues, troubleshooting.
+   - **General Inquiry Agent**: Answers general questions, policies, FAQs.
+. **Response Generation:** The selected agent processes the query and provides a response.
+
+![Routing Agent Flowchart](docs/images/routing_agent_flow.png)
+
 3. Tool Use
 4. Planning and Decomposition
 5. Memory and Note-Taking
