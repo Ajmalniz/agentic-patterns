@@ -14,6 +14,15 @@ This project uses:
 Each pattern will be implemented in separate files to maintain clarity and modularity. The patterns we'll implement include:
 
 1. Chain-of-Thought Prompting
+   ![Chain of Thought Flowchart](docs/images/chain_of_thought_flow.png)
+   This flowchart illustrates the Chain of Thought implementation for customer support:
+   - Extracts issue from customer email
+   - Generates draft response
+   - Checks for empathetic language
+   - Re-drafts if necessary
+   - Polishes final response
+   - Writes to file
+
 2. Self-Reflection
 3. Tool Use
 4. Planning and Decomposition
