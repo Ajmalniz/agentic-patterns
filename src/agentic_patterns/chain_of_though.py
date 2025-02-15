@@ -73,7 +73,7 @@ class CustomerSupport(Flow):
         re_drafted_response = response.choices[0].message.content.strip()
         self.state["re_drafted_response"] = re_drafted_response
         return re_drafted_response
-    @or_("sucess",re_draft_response)
+    @listen(or_("sucess",re_draft_response))
     def polish_response(self):
         """
         Fourth LLM Call:Polish the response to make it more engaging and professional
